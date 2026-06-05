@@ -3,157 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Bouquet Shop | Luxury Floral Catalogue</title>
+  <title>The Bouquet Shop | Fresh Flowers, Bouquets & Gifts in Tiruppur</title>
+  <meta name="description" content="Order premium bouquets, floral baskets, bouquet boxes, chocolate bouquets and custom gift combos from The Bouquet Shop in Tiruppur." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:wght@600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero" id="home">
+  <div class="announcement">
+    <span>Same-day bouquet orders in Tiruppur</span>
+    <a href="https://wa.me/918098090106" target="_blank" rel="noreferrer">Order on WhatsApp</a>
+  </div>
+
+  <header class="site-header" id="home">
     <nav class="nav">
-      <a class="brand" href="#home"><img src="assets/logo.png" alt="The Bouquet Shop logo"></a>
-      <div class="nav-links">
-        <a href="#catalogue">Catalogue</a>
-        <a href="#services">Services</a>
+      <a class="brand" href="#home" aria-label="The Bouquet Shop home">
+        <img src="assets/logo.png" alt="The Bouquet Shop logo">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#bouquets">Bouquets</a>
+        <a href="#collections">Collections</a>
+        <a href="#custom">Custom Orders</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
-
-    <section class="hero-inner">
-      <p class="eyebrow">Luxury Floral Studio</p>
-      <h1>Florals — The Real Mood Fixers</h1>
-      <p class="hero-text">Premium bouquets, floral baskets, bouquet boxes, chocolate bouquets, fruit bouquets, combo gifts and elegant add-ons for every occasion.</p>
-      <div>
-        <a class="btn primary" href="#catalogue">Explore Catalogue</a>
-        <a class="btn ghost" href="https://wa.me/918098090106" target="_blank">WhatsApp Saravana</a>
-        <a class="btn ghost" href="https://wa.me/919080929198" target="_blank">WhatsApp Pavithra</a>
-      </div>
-    </section>
   </header>
 
   <main>
-    <section class="intro" id="services">
-      <div>
-        <p class="section-kicker">Beautifully Arranged</p>
-        <h2>Classic, elegant and made with love</h2>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Premium Floral Studio</p>
+        <h1>Fresh flowers, gift bouquets and occasion-ready arrangements.</h1>
+        <p class="hero-text">Choose from hand-tied bouquets, floral baskets, bouquet boxes, chocolate gifts, fruit bouquets and add-ons. Every order is customised with care and delivered with a polished finish.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#bouquets">Shop Bouquets</a>
+          <a class="btn secondary" href="#collections">Browse Catalogue</a>
+        </div>
+        <div class="service-row" aria-label="Service highlights">
+          <span>Fresh flowers</span>
+          <span>Luxury wrapping</span>
+          <span>Custom notes</span>
+          <span>Tiruppur delivery</span>
+        </div>
       </div>
-      <div class="feature-grid">
-        <div>✦ Fresh & Premium Flowers</div>
-        <div>✦ Luxury Packaging</div>
-        <div>✦ Customisation Available</div>
-        <div>✦ Safe & On-time Delivery</div>
+      <div class="hero-media">
+        <img class="hero-main" src="assets/premium-bouquet.png" alt="Premium bouquet catalogue preview">
+        <img class="hero-float" src="assets/fresh-flower.png" alt="Fresh flower bouquet preview">
       </div>
     </section>
 
-    <section class="catalogue" id="catalogue">
-      <div class="section-title">
-        <p class="section-kicker">Price Catalogue</p>
-        <h2>Choose your perfect bouquet</h2>
-        <p>Click any catalogue image to view the full-size price list.</p>
+    <section class="category-band" aria-label="Shop categories">
+      <a href="#fresh">Fresh Flowers</a>
+      <a href="#premium">Premium Bouquets</a>
+      <a href="#boxes">Bouquet Boxes</a>
+      <a href="#gifts">Chocolate Gifts</a>
+      <a href="#events">Wedding & Events</a>
+    </section>
+
+    <section class="section" id="bouquets">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Signature Picks</p>
+          <h2>Shop bestselling bouquet styles</h2>
+        </div>
+        <div class="search-wrap">
+          <input id="catalogueSearch" type="search" placeholder="Search: roses, combo, basket, chocolate..." />
+        </div>
       </div>
 
-      <div class="search-wrap">
-        <input id="catalogueSearch" type="search" placeholder="Search catalogue: chocolate, combo, basket, fruit..." />
-      </div>
-
-      <div class="catalogue-grid" id="catalogueGrid">
-        <article class="catalogue-card" data-title="fresh flower bouquets">
-          <a href="assets/fresh-flower.png" target="_blank"><img src="assets/fresh-flower.png" alt="Fresh Flower Bouquets"></a>
-          <div class="catalogue-info">
+      <div class="product-grid" id="catalogueGrid">
+        <article class="product-card" id="fresh" data-title="fresh flower bouquets roses lilies orchids gerbera mixed flowers">
+          <a class="product-image" href="assets/fresh-flower.png" target="_blank" rel="noreferrer">
+            <img src="assets/fresh-flower.png" alt="Fresh flower bouquets">
+            <span class="badge">Popular</span>
+          </a>
+          <div class="product-info">
+            <p class="rating">5.0 rating</p>
             <h3>Fresh Flower Bouquets</h3>
-            <p>Classic rose, lily, orchid, gerbera and mixed flower arrangements.</p>
-            <a class="mini-link" href="assets/fresh-flower.png" target="_blank">View full catalogue</a>
+            <p>Rose, lily, orchid, gerbera and mixed flower arrangements for daily gifting.</p>
+            <div class="price-row"><span>From Rs 699</span><a href="https://wa.me/918098090106?text=I%20want%20to%20order%20Fresh%20Flower%20Bouquets" target="_blank" rel="noreferrer">Order</a></div>
           </div>
         </article>
-<article class="catalogue-card" data-title="premium bouquets">
-          <a href="assets/premium-bouquet.png" target="_blank"><img src="assets/premium-bouquet.png" alt="Premium Bouquets"></a>
-          <div class="catalogue-info">
+
+        <article class="product-card" id="premium" data-title="premium bouquets luxury proposal anniversary grand arrangements">
+          <a class="product-image" href="assets/premium-bouquet.png" target="_blank" rel="noreferrer">
+            <img src="assets/premium-bouquet.png" alt="Premium bouquets">
+            <span class="badge dark">Luxury</span>
+          </a>
+          <div class="product-info">
+            <p class="rating">4.9 rating</p>
             <h3>Premium Bouquets</h3>
-            <p>Luxury wraps, proposal bouquets, anniversary specials and grand arrangements.</p>
-            <a class="mini-link" href="assets/premium-bouquet.png" target="_blank">View full catalogue</a>
+            <p>Statement wraps, proposal bouquets, anniversary specials and grand floral gifting.</p>
+            <div class="price-row"><span>From Rs 1,499</span><a href="https://wa.me/918098090106?text=I%20want%20to%20order%20Premium%20Bouquets" target="_blank" rel="noreferrer">Order</a></div>
           </div>
         </article>
-<article class="catalogue-card" data-title="bouquet boxes">
-          <a href="assets/bouquet-boxes.png" target="_blank"><img src="assets/bouquet-boxes.png" alt="Bouquet Boxes"></a>
-          <div class="catalogue-info">
+
+        <article class="product-card" id="boxes" data-title="bouquet boxes mini rose boxes heart boxes acrylic bridal boxes">
+          <a class="product-image" href="assets/bouquet-boxes.png" target="_blank" rel="noreferrer">
+            <img src="assets/bouquet-boxes.png" alt="Bouquet boxes">
+            <span class="badge">Gift Ready</span>
+          </a>
+          <div class="product-info">
+            <p class="rating">4.8 rating</p>
             <h3>Bouquet Boxes</h3>
             <p>Mini rose boxes, heart boxes, acrylic boxes and bridal bouquet boxes.</p>
-            <a class="mini-link" href="assets/bouquet-boxes.png" target="_blank">View full catalogue</a>
+            <div class="price-row"><span>From Rs 999</span><a href="https://wa.me/918098090106?text=I%20want%20to%20order%20Bouquet%20Boxes" target="_blank" rel="noreferrer">Order</a></div>
           </div>
         </article>
-<article class="catalogue-card" data-title="floral basket arrangements">
-          <a href="assets/floral-basket.png" target="_blank"><img src="assets/floral-basket.png" alt="Floral Basket Arrangements"></a>
-          <div class="catalogue-info">
+
+        <article class="product-card" data-title="floral basket arrangements rose baskets mixed flowers orchid wedding baskets">
+          <a class="product-image" href="assets/floral-basket.png" target="_blank" rel="noreferrer">
+            <img src="assets/floral-basket.png" alt="Floral basket arrangements">
+          </a>
+          <div class="product-info">
+            <p class="rating">4.8 rating</p>
             <h3>Floral Basket Arrangements</h3>
-            <p>Rose baskets, mixed flower baskets, orchid baskets and wedding baskets.</p>
-            <a class="mini-link" href="assets/floral-basket.png" target="_blank">View full catalogue</a>
-          </div>
-        </article>
-<article class="catalogue-card" data-title="chocolate bouquets">
-          <a href="assets/chocolate.png" target="_blank"><img src="assets/chocolate.png" alt="Chocolate Bouquets"></a>
-          <div class="catalogue-info">
-            <h3>Chocolate Bouquets</h3>
-            <p>Dairy Milk, KitKat, Ferrero Rocher and imported chocolate bouquets.</p>
-            <a class="mini-link" href="assets/chocolate.png" target="_blank">View full catalogue</a>
-          </div>
-        </article>
-<article class="catalogue-card" data-title="combo catalogue">
-          <a href="assets/combo.png" target="_blank"><img src="assets/combo.png" alt="Combo Catalogue"></a>
-          <div class="catalogue-info">
-            <h3>Combo Catalogue</h3>
-            <p>Roses with teddy, chocolates, cakes and deluxe celebration combos.</p>
-            <a class="mini-link" href="assets/combo.png" target="_blank">View full catalogue</a>
-          </div>
-        </article>
-<article class="catalogue-card" data-title="fruit bouquets">
-          <a href="assets/fruit-bouquet.png" target="_blank"><img src="assets/fruit-bouquet.png" alt="Fruit Bouquets"></a>
-          <div class="catalogue-info">
-            <h3>Fruit Bouquets</h3>
-            <p>Fresh fruit, premium fruit and healthy dry fruit gift bouquets.</p>
-            <a class="mini-link" href="assets/fruit-bouquet.png" target="_blank">View full catalogue</a>
-          </div>
-        </article>
-<article class="catalogue-card" data-title="gift & add-on catalogue">
-          <a href="assets/add-ons.png" target="_blank"><img src="assets/add-ons.png" alt="Gift & Add-on Catalogue"></a>
-          <div class="catalogue-info">
-            <h3>Gift & Add-on Catalogue</h3>
-            <p>Greeting cards, teddy bears, gift boxes, fairy lights and custom name tags.</p>
-            <a class="mini-link" href="assets/add-ons.png" target="_blank">View full catalogue</a>
-          </div>
-        </article>
-<article class="catalogue-card" data-title="wedding & event bouquets">
-          <a href="assets/wedding-event.png" target="_blank"><img src="assets/wedding-event.png" alt="Wedding & Event Bouquets"></a>
-          <div class="catalogue-info">
-            <h3>Wedding & Event Bouquets</h3>
-            <p>Welcome, bridal, reception, corporate and grand stage bouquets.</p>
-            <a class="mini-link" href="assets/wedding-event.png" target="_blank">View full catalogue</a>
+            <p>Elegant baskets for birthdays, housewarmings, events and family gifting.</p>
+            <div class="price-row"><span>From Rs 1,299</span><a href="https://wa.me/918098090106?text=I%20want%20to%20order%20Floral%20Basket%20Arrangements" target="_blank" rel="noreferrer">Order</a></div>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="cta">
-      <p class="script">For every occasion, we have the perfect bouquet for you.</p>
-      <h2>Order your customised bouquet today</h2>
-      <a class="btn primary" href="https://wa.me/918098090106" target="_blank">Order on WhatsApp</a>
+    <section class="feature-split" id="custom">
+      <div class="feature-copy">
+        <p class="eyebrow">Custom Bouquets</p>
+        <h2>Tell us the occasion. We will design the arrangement.</h2>
+        <p>Share your budget, flower preference, colours and delivery time. We will suggest a polished bouquet or gift combo and confirm it on WhatsApp.</p>
+        <div class="feature-points">
+          <span>Birthday</span>
+          <span>Anniversary</span>
+          <span>Proposal</span>
+          <span>Wedding</span>
+          <span>Corporate</span>
+          <span>Surprise Gifts</span>
+        </div>
+        <a class="btn primary" href="https://wa.me/919080929198?text=I%20need%20a%20custom%20bouquet" target="_blank" rel="noreferrer">Start Custom Order</a>
+      </div>
+      <img src="assets/combo.png" alt="Combo gift bouquet catalogue">
+    </section>
+
+    <section class="section soft" id="collections">
+      <div class="section-head compact">
+        <div>
+          <p class="eyebrow">Catalogue</p>
+          <h2>Explore more collections</h2>
+        </div>
+        <a class="text-link" href="https://wa.me/918098090106" target="_blank" rel="noreferrer">Ask for price list</a>
+      </div>
+
+      <div class="collection-grid">
+        <article class="collection-card" id="gifts" data-title="chocolate bouquets dairy milk kitkat ferrero imported chocolate">
+          <img src="assets/chocolate.png" alt="Chocolate bouquets">
+          <div>
+            <h3>Chocolate Bouquets</h3>
+            <p>Dairy Milk, KitKat, Ferrero Rocher and imported chocolate arrangements.</p>
+          </div>
+        </article>
+        <article class="collection-card" data-title="combo catalogue teddy chocolates cakes deluxe celebration combos">
+          <img src="assets/combo.png" alt="Combo catalogue">
+          <div>
+            <h3>Combo Gifts</h3>
+            <p>Flowers with teddy, chocolates, cakes and celebration add-ons.</p>
+          </div>
+        </article>
+        <article class="collection-card" data-title="fruit bouquets fresh fruit premium fruit dry fruit gift bouquets">
+          <img src="assets/fruit-bouquet.png" alt="Fruit bouquets">
+          <div>
+            <h3>Fruit Bouquets</h3>
+            <p>Fresh fruit, premium fruit and healthy dry fruit gifting options.</p>
+          </div>
+        </article>
+        <article class="collection-card" data-title="gift add-ons greeting cards teddy bears gift boxes lights name tags">
+          <img src="assets/add-ons.png" alt="Gift add-on catalogue">
+          <div>
+            <h3>Gift Add-ons</h3>
+            <p>Greeting cards, teddy bears, gift boxes, fairy lights and name tags.</p>
+          </div>
+        </article>
+        <article class="collection-card wide" id="events" data-title="wedding event bouquets welcome bridal reception corporate stage bouquets">
+          <img src="assets/wedding-event.png" alt="Wedding and event bouquets">
+          <div>
+            <h3>Wedding & Event Florals</h3>
+            <p>Welcome, bridal, reception, corporate and grand stage bouquets planned around your event palette.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div>
+        <p class="eyebrow">Customer Love</p>
+        <h2>With every bouquet, a memory to cherish.</h2>
+      </div>
+      <div class="review-grid">
+        <blockquote>Fresh flowers, neat wrapping and quick response for a birthday surprise.</blockquote>
+        <blockquote>The bouquet box looked premium and was ready exactly on time.</blockquote>
+        <blockquote>They helped choose colours and add-ons for a beautiful anniversary gift.</blockquote>
+      </div>
     </section>
 
     <section class="contact" id="contact">
-      <div class="contact-card">
-        <p class="section-kicker">For Orders & Enquiries</p>
-        <h2>Contact Us</h2>
+      <div class="contact-panel">
+        <p class="eyebrow">Orders & Enquiries</p>
+        <h2>Order from The Bouquet Shop</h2>
+        <p>Location: Tiruppur. Share your occasion, budget and preferred delivery time on WhatsApp.</p>
         <div class="contacts">
           <a href="tel:+918098090106"><span>Saravana</span><strong>+91 80980 90106</strong></a>
-          <a href="tel:+919080929198"><span>Pavithra</span><strong>9080929198</strong></a>
+          <a href="tel:+919080929198"><span>Pavithra</span><strong>+91 90809 29198</strong></a>
         </div>
-        <p class="location">Location: Tiruppur</p>
-        <p class="rsp">from RSP GROUPS</p>
+        <a class="btn primary" href="https://wa.me/918098090106?text=Hi%2C%20I%20want%20to%20order%20from%20The%20Bouquet%20Shop" target="_blank" rel="noreferrer">Order on WhatsApp</a>
       </div>
     </section>
   </main>
 
-  <footer>© The Bouquet Shop • Love for Florals</footer>
+  <footer class="footer">
+    <div>
+      <strong>The Bouquet Shop</strong>
+      <span>Fresh flowers, premium bouquets and thoughtful gifts.</span>
+    </div>
+    <span>from RSP GROUPS</span>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
