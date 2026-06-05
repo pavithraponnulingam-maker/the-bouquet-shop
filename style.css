@@ -1,0 +1,45 @@
+*{box-sizing:border-box}
+:root{--wine:#4d0610;--deep:#180306;--gold:#d3a64d;--cream:#fff6eb;--rose:#b93658;--text:#2b1113}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Montserrat,sans-serif;color:var(--text);background:linear-gradient(180deg,#fff8ef,#fff0e9)}
+.hero{min-height:100vh;color:#fff;background:radial-gradient(circle at 80% 10%,rgba(211,166,77,.3),transparent 22%),linear-gradient(110deg,rgba(24,3,6,.95),rgba(77,6,16,.82)),url('assets/wedding-event.png') center/cover;position:relative}
+.hero:after{content:"";position:absolute;inset:18px;border:1px solid rgba(211,166,77,.65);border-radius:28px;pointer-events:none}
+.nav{width:min(1180px,92%);margin:auto;padding:26px 0;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.brand img{width:min(360px,58vw);background:rgba(255,246,235,.92);padding:12px 24px;border-radius:999px;box-shadow:0 18px 45px rgba(0,0,0,.22)}
+.nav-links a{color:#fff;text-decoration:none;margin-left:26px;font-size:13px;letter-spacing:2px;text-transform:uppercase}
+.hero-inner{width:min(1180px,92%);margin:auto;min-height:72vh;display:flex;flex-direction:column;justify-content:center;position:relative;z-index:2}
+.eyebrow,.section-kicker{color:var(--gold);letter-spacing:5px;text-transform:uppercase;font-size:13px;font-weight:700}
+h1,h2,h3{font-family:Cinzel,serif;margin:0}
+h1{font-size:clamp(44px,8vw,104px);line-height:.95;max-width:950px;text-shadow:0 12px 25px rgba(0,0,0,.3)}
+.hero-text{max-width:720px;font-size:18px;line-height:1.8;color:#fff4df}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 25px;border-radius:999px;text-decoration:none;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800;margin:10px 8px 0 0}
+.primary{background:linear-gradient(135deg,#f4d27a,#b77b25);color:#2a080b}
+.ghost{border:1px solid rgba(244,210,122,.7);color:#fff;background:rgba(255,255,255,.06)}
+.intro{padding:75px 7%;background:#fffaf3;display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+.intro h2,.section-title h2,.contact h2,.cta h2{font-size:clamp(32px,5vw,62px);color:var(--wine)}
+.feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.feature-grid div{background:#fff;border:1px solid rgba(211,166,77,.55);border-radius:18px;padding:24px;font-weight:700;box-shadow:0 12px 30px rgba(77,6,16,.06)}
+.catalogue{padding:90px 5%;background:radial-gradient(circle at top left,rgba(179,54,88,.12),transparent 30%),#fff6eb}
+.section-title{text-align:center;max-width:760px;margin:auto}
+.section-title p{line-height:1.7}
+.search-wrap{max-width:640px;margin:35px auto}
+.search-wrap input{width:100%;padding:18px 24px;border:1px solid rgba(211,166,77,.65);border-radius:999px;font:inherit;outline:none;box-shadow:0 14px 34px rgba(77,6,16,.08)}
+.catalogue-grid{width:min(1240px,100%);margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.catalogue-card{background:#fff;border:1px solid rgba(211,166,77,.62);border-radius:28px;overflow:hidden;box-shadow:0 22px 50px rgba(77,6,16,.12);transition:.25s}
+.catalogue-card:hover{transform:translateY(-6px)}
+.catalogue-card img{width:100%;height:390px;object-fit:cover;object-position:top;display:block;background:#eee}
+.catalogue-info{padding:24px}
+.catalogue-info h3{font-size:23px;color:var(--wine);margin-bottom:10px}
+.catalogue-info p{line-height:1.7;color:#6d4d48;font-size:14px}
+.mini-link{color:var(--rose);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:12px;text-decoration:none}
+.cta{text-align:center;padding:90px 5%;color:#fff;background:linear-gradient(135deg,var(--deep),var(--wine))}
+.cta h2{color:#fff}.script{font-family:Great Vibes,cursive;font-size:48px;color:#f1cd82;margin:0 0 10px}
+.contact{padding:90px 5%;background:linear-gradient(180deg,#fff6eb,#ffe8e5)}
+.contact-card{max-width:950px;margin:auto;text-align:center;background:#fff;border:1px solid rgba(211,166,77,.7);border-radius:34px;padding:45px;box-shadow:0 24px 60px rgba(77,6,16,.12)}
+.contacts{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:32px 0}
+.contacts a{padding:22px;border-radius:22px;background:var(--wine);color:#fff;text-decoration:none;display:flex;flex-direction:column;gap:8px}
+.contacts span{color:#f4d27a;text-transform:uppercase;letter-spacing:2px;font-size:13px}.contacts strong{font-size:26px}
+.location{font-size:20px;font-weight:700}.rsp{font-family:Cormorant Garamond,serif;letter-spacing:4px;color:var(--gold);font-size:22px}
+footer{text-align:center;padding:24px;background:var(--deep);color:#f4d27a}
+@media(max-width:980px){.catalogue-grid{grid-template-columns:repeat(2,1fr)}.intro{grid-template-columns:1fr}.contacts{grid-template-columns:1fr}}
+@media(max-width:640px){.nav{align-items:flex-start;flex-direction:column}.nav-links a{margin:0 14px 0 0}.catalogue-grid{grid-template-columns:1fr}.catalogue-card img{height:auto}.feature-grid{grid-template-columns:1fr}}
