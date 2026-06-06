@@ -1,102 +1,125 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 650" role="img" aria-labelledby="title desc">
-  <title id="title">The Bouquet Shop luxury floral logo</title>
-  <desc id="desc">Premium floral logo with blush peony, rose gold accents, sage leaves, the business name The Bouquet Shop, and tagline Love for Florals.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 620" role="img" aria-labelledby="title desc">
+  <title id="title">The Bouquet Shop logo</title>
+  <desc id="desc">Luxury floral logo with THE vertically on the left, Bouquet Shop in a large serif wordmark, blush rose, botanical line art, sage leaves, rose gold accents, and Love for Florals tagline.</desc>
   <defs>
-    <radialGradient id="peonyPetal" cx="50%" cy="45%" r="60%">
-      <stop offset="0%" stop-color="#F8DCE3"/>
-      <stop offset="48%" stop-color="#E9B7C1"/>
-      <stop offset="100%" stop-color="#C97C8E"/>
+    <radialGradient id="petal" cx="48%" cy="44%" r="65%">
+      <stop offset="0%" stop-color="#FFF1F4"/>
+      <stop offset="45%" stop-color="#E9B7C1"/>
+      <stop offset="100%" stop-color="#C98593"/>
     </radialGradient>
-    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F6D9A7"/>
-      <stop offset="36%" stop-color="#CFA06A"/>
-      <stop offset="70%" stop-color="#A86F3D"/>
-      <stop offset="100%" stop-color="#F2C98F"/>
+    <linearGradient id="ink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3D4549"/>
+      <stop offset="55%" stop-color="#222222"/>
+      <stop offset="100%" stop-color="#111416"/>
     </linearGradient>
-    <linearGradient id="sageLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#D7DDCC"/>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B67834"/>
+      <stop offset="45%" stop-color="#CFA06A"/>
+      <stop offset="100%" stop-color="#E4BD79"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8DDCF"/>
       <stop offset="55%" stop-color="#A8B39A"/>
-      <stop offset="100%" stop-color="#637259"/>
+      <stop offset="100%" stop-color="#6F7B65"/>
     </linearGradient>
-    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#CFA06A" flood-opacity=".14"/>
+    <filter id="roseShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#CFA06A" flood-opacity=".12"/>
     </filter>
     <style>
       .serif{font-family:"Cinzel","Playfair Display","Cormorant Garamond",Georgia,serif}
       .sans{font-family:"Inter","Montserrat",Arial,sans-serif}
-      .charcoal{fill:#222222}
-      .gold{fill:url(#roseGold)}
-      .line{fill:none;stroke:url(#roseGold);stroke-width:4;stroke-linecap:round;stroke-linejoin:round}
-      .thin{fill:none;stroke:#CFA06A;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;opacity:.82}
-      .leaf{fill:url(#sageLeaf)}
-      .petal{fill:url(#peonyPetal);opacity:.92}
+      .word{fill:url(#ink)}
+      .rg{fill:url(#gold)}
+      .goldline{fill:none;stroke:url(#gold);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .fine{fill:none;stroke:#CFA06A;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.86}
+      .botanical{fill:none;stroke:#A8B39A;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+      .leaf{fill:url(#leaf)}
+      .petal{fill:url(#petal)}
     </style>
   </defs>
 
-  <g opacity=".96" filter="url(#softShadow)">
-    <g transform="translate(780 285)">
-      <ellipse class="petal" rx="92" ry="196" transform="rotate(0)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(28)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(56)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(84)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(112)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(140)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(168)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(196)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(224)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(252)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(280)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(308)"/>
-      <ellipse class="petal" rx="78" ry="180" transform="rotate(336)"/>
-      <circle r="76" fill="#F3C9D2" opacity=".88"/>
-      <path d="M-48 6c34-50 72-54 112-18-28 42-67 55-112 18Z" fill="#DA91A3" opacity=".65"/>
-      <path d="M-13-48c48 20 70 58 58 104-47-14-76-47-58-104Z" fill="#F7D7DE" opacity=".7"/>
-      <circle r="18" fill="#CFA06A" opacity=".5"/>
-    </g>
-  </g>
+  <rect width="1800" height="620" fill="none"/>
 
-  <g opacity=".92">
-    <path class="leaf" d="M445 190c-74-58-126-93-205-78 51 72 117 92 205 78Z"/>
-    <path class="thin" d="M252 122c58 21 113 44 171 61"/>
-    <path class="leaf" d="M1080 155c86-45 151-58 220-26-66 60-132 68-220 26Z"/>
-    <path class="thin" d="M1280 132c-61 10-120 20-183 27"/>
-    <path class="leaf" d="M1122 490c88 43 151 48 214 10-71-52-139-53-214-10Z"/>
-    <path class="thin" d="M1314 498c-62-4-121-11-181-10"/>
-    <path class="leaf" d="M430 505c-82 50-143 66-214 36 66-61 132-72 214-36Z"/>
-    <path class="thin" d="M238 535c61-12 117-23 174-30"/>
-  </g>
-
-  <g>
-    <path class="line" d="M303 431c102 45 225 34 340-34"/>
-    <path class="line" d="M953 395c130 68 238 75 346 28"/>
-    <path class="thin" d="M329 254c-42-42-86-45-126-11"/>
-    <path class="thin" d="M1262 252c43-45 89-50 130-16"/>
-    <path class="thin" d="M344 418c-38 11-68 33-90 68"/>
-    <path class="thin" d="M1240 416c39 13 69 38 90 74"/>
-    <circle cx="345" cy="254" r="8" class="gold"/>
-    <circle cx="1261" cy="252" r="8" class="gold"/>
-    <circle cx="345" cy="418" r="6" class="gold"/>
-    <circle cx="1240" cy="416" r="6" class="gold"/>
-  </g>
-
-  <g transform="translate(150 172)">
-    <text class="serif charcoal" x="0" y="0" font-size="44" font-weight="700" letter-spacing="8">T</text>
-    <text class="serif charcoal" x="0" y="55" font-size="44" font-weight="700" letter-spacing="8">H</text>
-    <text class="serif charcoal" x="0" y="110" font-size="44" font-weight="700" letter-spacing="8">E</text>
-    <rect x="57" y="-22" width="2.5" height="168" fill="#CFA06A" opacity=".78"/>
-  </g>
-
-  <g text-anchor="middle">
-    <text class="serif charcoal" x="800" y="272" font-size="104" font-weight="800" letter-spacing="13">BOUQUET</text>
-    <text class="serif charcoal" x="800" y="378" font-size="88" font-weight="700" letter-spacing="15">SHOP</text>
-    <path d="M565 408h470" stroke="url(#roseGold)" stroke-width="4" stroke-linecap="round"/>
-    <text class="sans charcoal" x="800" y="466" font-size="24" font-weight="700" letter-spacing="10">LOVE FOR FLORALS</text>
+  <g transform="translate(1120 188)" filter="url(#roseShadow)" opacity=".92">
+    <ellipse class="petal" rx="54" ry="126" transform="rotate(0)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(28)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(56)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(84)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(112)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(140)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(168)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(196)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(224)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(252)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(280)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(308)"/>
+    <ellipse class="petal" rx="48" ry="118" transform="rotate(336)"/>
+    <circle r="46" fill="#F3C8D1" opacity=".9"/>
+    <path d="M-29 2c24-35 56-38 84-11-22 31-51 41-84 11Z" fill="#CB7F91" opacity=".55"/>
+    <path d="M-4-31c32 14 49 41 40 72-32-11-49-33-40-72Z" fill="#FFF0F4" opacity=".66"/>
+    <circle r="10" fill="#CFA06A" opacity=".5"/>
   </g>
 
   <g opacity=".88">
-    <path class="thin" d="M575 230c-18-22-16-47 1-66 18 22 17 45-1 66Z"/>
-    <path class="thin" d="M1025 228c18-22 17-46-2-66-17 22-16 46 2 66Z"/>
-    <path class="thin" d="M704 173c18-18 40-18 58-1-19 18-39 19-58 1Z"/>
-    <path class="thin" d="M838 174c18-19 40-19 58-2-19 18-40 20-58 2Z"/>
+    <path class="leaf" d="M905 416c-70 18-110 46-145 98 72-7 119-39 145-98Z"/>
+    <path class="leaf" d="M960 426c-67 28-102 61-126 117 70-17 111-50 126-117Z"/>
+    <path class="leaf" d="M1026 424c-61 38-86 76-94 135 63-28 96-66 94-135Z"/>
+    <path class="botanical" d="M790 508c64-56 117-87 196-104"/>
+    <path class="botanical" d="M982 402c52-12 86-35 115-76"/>
+    <path class="fine" d="M1035 471c42 23 70 7 82-49"/>
+    <path class="fine" d="M1086 492c57-12 85-52 84-120"/>
+    <path class="fine" d="M1024 498c-25 34-46 60-77 82"/>
+  </g>
+
+  <g text-anchor="start">
+    <text class="serif rg" x="60" y="300" font-size="34" font-weight="700" letter-spacing="4">T</text>
+    <text class="serif rg" x="60" y="344" font-size="34" font-weight="700" letter-spacing="4">H</text>
+    <text class="serif rg" x="60" y="388" font-size="34" font-weight="700" letter-spacing="4">E</text>
+  </g>
+
+  <g>
+    <text class="serif word" x="105" y="382" font-size="142" font-weight="600" letter-spacing="2">BOUQUET SHOP</text>
+    <path d="M520 419c106 84 238 70 336-18" fill="none" stroke="url(#ink)" stroke-width="8" stroke-linecap="round" opacity=".96"/>
+    <path d="M678 420c69 31 142 21 204-27" fill="none" stroke="url(#gold)" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+
+  <g opacity=".95">
+    <circle cx="247" cy="332" r="43" fill="none" stroke="#CFA06A" stroke-width="1.6" opacity=".55"/>
+    <path class="botanical" d="M236 357c-11-38 2-65 29-82"/>
+    <path class="botanical" d="M236 357c20-18 38-20 59-7"/>
+    <path class="petal" d="M255 292c9-16 23-19 38-9-8 14-21 18-38 9Z" opacity=".75"/>
+    <path class="petal" d="M229 321c11-12 25-12 38 0-12 12-25 13-38 0Z" opacity=".7"/>
+    <circle cx="224" cy="346" r="5" fill="#CFA06A"/>
+    <circle cx="273" cy="309" r="4" fill="#CFA06A"/>
+
+    <circle cx="621" cy="332" r="45" fill="none" stroke="#CFA06A" stroke-width="1.6" opacity=".5"/>
+    <path class="botanical" d="M621 371c-2-50 17-77 53-89"/>
+    <path class="petal" d="M653 284c14-13 29-11 42 3-13 12-28 11-42-3Z" opacity=".72"/>
+    <path class="petal" d="M609 334c14-14 31-15 47 0-15 13-31 14-47 0Z" opacity=".7"/>
+    <circle cx="635" cy="311" r="5" fill="#CFA06A"/>
+
+    <circle cx="1504" cy="332" r="43" fill="none" stroke="#CFA06A" stroke-width="1.6" opacity=".55"/>
+    <path class="botanical" d="M1490 356c-8-37 4-63 28-80"/>
+    <path class="petal" d="M1514 289c10-16 24-19 39-9-9 14-22 18-39 9Z" opacity=".75"/>
+    <path class="petal" d="M1479 330c13-14 29-15 45-2-14 14-29 15-45 2Z" opacity=".7"/>
+    <circle cx="1478" cy="348" r="5" fill="#CFA06A"/>
+    <circle cx="1528" cy="309" r="4" fill="#CFA06A"/>
+  </g>
+
+  <g opacity=".9">
+    <path class="fine" d="M833 328c38-54 79-70 119-48"/>
+    <path class="petal" d="M853 314c26-38 57-40 83-7-27 31-56 35-83 7Z" opacity=".78"/>
+    <path class="botanical" d="M854 384c25-47 65-66 119-58"/>
+    <path class="petal" d="M919 326c-1-40 22-64 60-68 3 42-20 64-60 68Z" opacity=".8"/>
+    <path class="leaf" d="M804 391c43 3 71 22 87 59-43-1-72-21-87-59Z"/>
+  </g>
+
+  <g>
+    <path class="goldline" d="M305 500h292"/>
+    <circle class="rg" cx="592" cy="500" r="6"/>
+    <circle class="rg" cx="706" cy="500" r="6"/>
+    <path class="goldline" d="M716 500h280"/>
+    <path class="fine" d="M642 484l12-22 12 22 23 11-23 11-12 22-12-22-23-11Z"/>
+    <text class="serif rg" x="1180" y="520" font-size="38" font-weight="500" letter-spacing="9">LOVE FOR FLORALS</text>
   </g>
 </svg>
