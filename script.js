@@ -29,7 +29,7 @@ navLinks?.addEventListener('click', (event) => {
 });
 
 const revealItems = document.querySelectorAll(
-  '.hero-copy, .hero-media, .section-head, .lookbook-card, .inspiration-card, .feature-copy, .feature-split img, .collection-card, blockquote, .contact-panel, .contacts a'
+  '.hero-copy, .hero-media, .section-head, .lookbook-card, .product-showcase-card, .inspiration-card, .feature-copy, .feature-split img, .collection-card, blockquote, .contact-panel, .contacts a'
 );
 
 if ('IntersectionObserver' in window) {
