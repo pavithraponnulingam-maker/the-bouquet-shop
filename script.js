@@ -2,6 +2,10 @@ const search = document.getElementById('catalogueSearch');
 const searchableCards = [...document.querySelectorAll('[data-title]')];
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.getElementById('navLinks');
+const catalogueModal = document.getElementById('catalogueModal');
+const catalogueModalImage = document.getElementById('catalogueModalImage');
+const catalogueModalTitle = document.getElementById('catalogueModalTitle');
+const catalogueTriggers = document.querySelectorAll('.catalogue-trigger');
 
 search?.addEventListener('input', () => {
   const query = search.value.toLowerCase().trim();
@@ -45,3 +49,35 @@ if ('IntersectionObserver' in window) {
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
+
+const closeCatalogue = () => {
+  catalogueModal?.classList.remove('is-open');
+  catalogueModal?.setAttribute('aria-hidden', 'true');
+  if (catalogueModalImage) {
+    catalogueModalImage.removeAttribute('src');
+    catalogueModalImage.alt = '';
+  }
+};
+
+catalogueTriggers.forEach((trigger) => {
+  trigger.addEventListener('click', () => {
+    const src = trigger.dataset.catalogueSrc;
+    const title = trigger.dataset.catalogueTitle || 'Price Catalogue';
+
+    if (!src || !catalogueModal || !catalogueModalImage || !catalogueModalTitle) return;
+
+    catalogueModalImage.src = src;
+    catalogueModalImage.alt = title;
+    catalogueModalTitle.textContent = title;
+    catalogueModal.classList.add('is-open');
+    catalogueModal.setAttribute('aria-hidden', 'false');
+  });
+});
+
+document.querySelectorAll('[data-close-catalogue]').forEach((closeButton) => {
+  closeButton.addEventListener('click', closeCatalogue);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeCatalogue();
+});
