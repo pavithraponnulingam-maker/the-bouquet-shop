@@ -108,11 +108,31 @@ blockquote{margin:0;background:#fff;border:1px solid var(--line);border-radius:8
 .contacts a{display:flex;flex-direction:column;gap:8px;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:8px;padding:22px;box-shadow:0 12px 28px rgba(31,32,32,.06)}
 .contacts span{color:var(--rose);font-size:12px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}
 .contacts strong{font-size:24px;color:var(--sage-dark)}
-.footer{min-height:96px;background:#171d18;color:#f6eadb;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:24px max(4%,calc((100% - 1220px)/2))}
-.footer div{display:flex;flex-direction:column;gap:6px}
-.footer strong{font-family:Cinzel,serif;font-size:20px}
-.footer span{color:#d2c3b5;font-size:14px}
-.footer em{font-style:normal;color:#f6d9a7;font-size:13px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase}
+.bouquet-footer{position:relative;overflow:hidden;text-align:center;padding:55px 20px 38px;background:radial-gradient(circle at top left,rgba(233,183,193,.35),transparent 35%),radial-gradient(circle at bottom right,rgba(207,160,106,.28),transparent 35%),linear-gradient(135deg,#fffaf7,#f8f1ec,#fffdf9);border-top:1px solid rgba(207,160,106,.45)}
+.footer-tagline{margin:0;font-family:"Playfair Display","Cormorant Garamond",Georgia,serif;font-size:clamp(24px,4vw,46px);font-weight:700;letter-spacing:2px;color:#3b2c2c;text-transform:uppercase;text-shadow:0 3px 14px rgba(207,160,106,.28);animation:softGlow 3s ease-in-out infinite alternate}
+.footer-brand{margin:14px 0 0;font-family:"Great Vibes","Parisienne",cursive;font-size:clamp(20px,3vw,34px);color:#9b6b3f;letter-spacing:1px}
+.footer-brand strong{font-family:Cinzel,"Playfair Display",serif;font-size:.82em;letter-spacing:4px;color:#2a2525}
+.footer-divider{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px auto 4px;color:#cfa06a}
+.footer-divider span{width:min(120px,22vw);height:1px;background:linear-gradient(90deg,transparent,#cfa06a,transparent)}
+.footer-divider i{font-style:normal;animation:rotateSpark 4s linear infinite}
+.footer-floral-sparkles span{position:absolute;font-size:22px;opacity:.72;animation:floatFlower 6s ease-in-out infinite}
+.footer-floral-sparkles span:nth-child(1){left:8%;top:26%;animation-delay:0s}
+.footer-floral-sparkles span:nth-child(2){left:22%;top:14%;animation-delay:1s}
+.footer-floral-sparkles span:nth-child(3){right:14%;top:22%;animation-delay:1.8s}
+.footer-floral-sparkles span:nth-child(4){right:7%;bottom:22%;animation-delay:2.5s}
+.footer-floral-sparkles span:nth-child(5){left:50%;bottom:18%;animation-delay:3.2s}
+@keyframes softGlow{
+  from{transform:translateY(0);text-shadow:0 3px 12px rgba(207,160,106,.22)}
+  to{transform:translateY(-3px);text-shadow:0 6px 22px rgba(207,160,106,.55)}
+}
+@keyframes floatFlower{
+  0%,100%{transform:translateY(0) scale(1) rotate(0deg)}
+  50%{transform:translateY(-14px) scale(1.12) rotate(8deg)}
+}
+@keyframes rotateSpark{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
 .is-hidden{display:none!important}
 @media(max-width:1050px){
   .hero,.feature-split,.reviews{grid-template-columns:1fr}
@@ -154,5 +174,6 @@ blockquote{margin:0;background:#fff;border:1px solid var(--line);border-radius:8
   .lookbook-card h3{font-size:25px}
   .feature-split{padding-top:54px;padding-bottom:54px}
   .feature-split img{height:auto}
-  .footer{align-items:flex-start;flex-direction:column}
+  .bouquet-footer{padding:42px 14px 30px}
+  .footer-tagline{letter-spacing:1px}
 }
