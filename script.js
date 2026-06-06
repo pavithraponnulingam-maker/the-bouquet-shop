@@ -23,3 +23,25 @@ navLinks?.addEventListener('click', (event) => {
     menuToggle?.setAttribute('aria-expanded', 'false');
   }
 });
+
+const revealItems = document.querySelectorAll(
+  '.hero-copy, .hero-media, .section-head, .lookbook-card, .inspiration-card, .feature-copy, .feature-split img, .collection-card, blockquote, .contact-panel, .contacts a'
+);
+
+if ('IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.16 });
+
+  revealItems.forEach((item) => {
+    item.classList.add('reveal-item');
+    revealObserver.observe(item);
+  });
+} else {
+  revealItems.forEach((item) => item.classList.add('is-visible'));
+}
