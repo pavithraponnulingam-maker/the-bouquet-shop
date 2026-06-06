@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:wght@600;700&family=Great+Vibes&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260606-rich-animations" />
+  <link rel="stylesheet" href="style.css?v=20260606-click-catalogues" />
 </head>
 <body>
   <div class="floral-ambience" aria-hidden="true">
@@ -69,8 +69,8 @@
         </div>
       </div>
       <div class="hero-media">
-        <img class="hero-main" src="assets/premium-bouquet.png" alt="Premium bouquet catalogue preview">
-        <img class="hero-float" src="assets/fresh-flower.png" alt="Fresh flower bouquet preview">
+        <img class="hero-main" src="assets/category-anniversary.png" alt="Premium romantic bouquet arrangement">
+        <img class="hero-float" src="assets/category-birthday.png" alt="Fresh birthday bouquet arrangement">
       </div>
     </section>
 
@@ -204,7 +204,7 @@
           <p class="eyebrow">Catalogue</p>
           <h2>Explore more collections</h2>
         </div>
-        <a class="text-link" href="https://wa.me/918098090106" target="_blank" rel="noreferrer">Ask for price list</a>
+        <button class="text-link catalogue-trigger" type="button" data-catalogue-src="assets/premium-bouquet.png" data-catalogue-title="Premium Bouquet Price Catalogue">View price catalogue</button>
       </div>
 
       <div class="collection-grid">
@@ -213,6 +213,7 @@
           <div>
             <h3>Chocolate Bouquets</h3>
             <p>Dairy Milk, KitKat, Ferrero Rocher and imported chocolate arrangements.</p>
+            <button class="catalogue-trigger card-link" type="button" data-catalogue-src="assets/chocolate.png" data-catalogue-title="Chocolate Bouquet Catalogue">View catalogue</button>
           </div>
         </article>
         <article class="collection-card" data-title="combo catalogue teddy chocolates cakes deluxe celebration combos">
@@ -220,6 +221,7 @@
           <div>
             <h3>Combo Gifts</h3>
             <p>Flowers with teddy, chocolates, cakes and celebration add-ons.</p>
+            <button class="catalogue-trigger card-link" type="button" data-catalogue-src="assets/combo.png" data-catalogue-title="Combo Gift Catalogue">View catalogue</button>
           </div>
         </article>
         <article class="collection-card" data-title="fruit bouquets fresh fruit premium fruit dry fruit gift bouquets">
@@ -227,6 +229,7 @@
           <div>
             <h3>Fruit Bouquets</h3>
             <p>Fresh fruit, premium fruit and healthy dry fruit gifting options.</p>
+            <button class="catalogue-trigger card-link" type="button" data-catalogue-src="assets/fruit-bouquet.png" data-catalogue-title="Fruit Bouquet Catalogue">View catalogue</button>
           </div>
         </article>
         <article class="collection-card" data-title="gift add-ons greeting cards teddy bears gift boxes lights name tags">
@@ -234,6 +237,7 @@
           <div>
             <h3>Gift Add-ons</h3>
             <p>Greeting cards, teddy bears, gift boxes, fairy lights and name tags.</p>
+            <button class="catalogue-trigger card-link" type="button" data-catalogue-src="assets/add-ons.png" data-catalogue-title="Gift Add-ons Catalogue">View catalogue</button>
           </div>
         </article>
         <article class="collection-card wide" id="events" data-title="wedding event bouquets welcome bridal reception corporate stage bouquets">
@@ -241,6 +245,7 @@
           <div>
             <h3>Wedding & Event Florals</h3>
             <p>Welcome, bridal, reception, corporate and grand stage bouquets planned around your event palette.</p>
+            <button class="catalogue-trigger card-link" type="button" data-catalogue-src="assets/wedding-event.png" data-catalogue-title="Wedding and Event Florals Catalogue">View catalogue</button>
           </div>
         </article>
       </div>
@@ -283,6 +288,15 @@
     <p class="footer-brand">from <strong>RSP GROUPS</strong></p>
   </footer>
 
-  <script src="script.js?v=20260606-rich-animations"></script>
+  <div class="catalogue-modal" id="catalogueModal" aria-hidden="true">
+    <div class="catalogue-modal__backdrop" data-close-catalogue></div>
+    <div class="catalogue-modal__panel" role="dialog" aria-modal="true" aria-labelledby="catalogueModalTitle">
+      <button class="catalogue-modal__close" type="button" aria-label="Close catalogue" data-close-catalogue>×</button>
+      <h2 id="catalogueModalTitle">Price Catalogue</h2>
+      <img id="catalogueModalImage" src="" alt="">
+    </div>
+  </div>
+
+  <script src="script.js?v=20260606-click-catalogues"></script>
 </body>
 </html>
