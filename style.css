@@ -130,6 +130,7 @@ h3{font-size:22px;line-height:1.18}
 .price-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:16px;border-top:1px solid var(--line);padding-top:14px}
 .price-row span{font-weight:900;color:var(--ink)}
 .price-row a,.text-link{color:var(--rose);font-weight:900;text-transform:uppercase;text-decoration:none;font-size:12px;letter-spacing:.8px}
+button.text-link{border:0;background:transparent;padding:0;cursor:pointer;font:inherit;color:var(--rose)}
 .feature-split{position:relative;display:grid;grid-template-columns:1fr .95fr;gap:34px;align-items:center;background:var(--sage-dark);color:#fff;padding:76px max(4%,calc((100% - 1220px)/2));overflow:hidden}
 .feature-split:before{content:"";position:absolute;right:4%;top:30px;width:180px;height:180px;border:1px solid rgba(248,245,240,.18);border-radius:50%;background:repeating-conic-gradient(from 0deg,rgba(248,245,240,.12) 0 10deg,transparent 10deg 22deg);animation:slowSpin 26s linear infinite}
 .feature-split h2,.feature-split .eyebrow{color:#fff}
@@ -149,6 +150,9 @@ h3{font-size:22px;line-height:1.18}
 .collection-card div{padding:20px}
 .collection-card p{color:var(--muted);line-height:1.6;font-size:14px}
 .collection-card.wide{grid-column:span 2}
+.card-link{display:inline-flex;margin-top:10px;border:0;background:transparent;color:var(--rose);font:inherit;font-size:12px;font-weight:900;letter-spacing:.8px;text-transform:uppercase;cursor:pointer;padding:0}
+.card-link:after{content:"";display:inline-block;width:24px;height:1px;background:currentColor;margin:8px 0 0 9px;transition:width .25s ease}
+.card-link:hover:after{width:38px}
 .reviews{width:min(1220px,92%);margin:auto;padding:78px 0;display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start}
 .review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 blockquote{margin:0;background:#fff;border:1px solid var(--line);border-radius:8px;padding:24px;color:#4f4741;line-height:1.65;box-shadow:0 14px 34px rgba(31,32,32,.05)}
@@ -169,6 +173,14 @@ blockquote:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(31,32,32
 .contacts a:after{content:"";position:absolute;inset:auto -20% 0;height:3px;background:linear-gradient(90deg,#e9b7c1,#cfa06a,#a8b39a);transform:scaleX(0);transition:transform .32s ease}
 .contacts a:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(31,32,32,.1)}
 .contacts a:hover:after{transform:scaleX(1)}
+.catalogue-modal{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;padding:28px;background:rgba(31,32,32,.54)}
+.catalogue-modal.is-open{display:flex}
+.catalogue-modal__backdrop{position:absolute;inset:0}
+.catalogue-modal__panel{position:relative;z-index:1;width:min(980px,96vw);max-height:92vh;overflow:auto;background:#fffdf9;border:1px solid rgba(207,160,106,.44);border-radius:8px;box-shadow:0 30px 90px rgba(31,32,32,.28);padding:22px}
+.catalogue-modal__panel h2{margin:0 54px 16px 0;font-size:clamp(24px,3vw,38px)}
+.catalogue-modal__panel img{width:100%;height:auto;border-radius:6px;border:1px solid var(--line);background:#fff}
+.catalogue-modal__close{position:absolute;right:16px;top:14px;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--sage-dark);font-size:26px;line-height:1;cursor:pointer}
+.catalogue-modal__close:hover{border-color:#cfa06a;color:var(--rose)}
 .bouquet-footer{position:relative;overflow:hidden;text-align:center;padding:55px 20px 38px;background:radial-gradient(circle at top left,rgba(233,183,193,.35),transparent 35%),radial-gradient(circle at bottom right,rgba(207,160,106,.28),transparent 35%),linear-gradient(135deg,#fffaf7,#f8f1ec,#fffdf9);border-top:1px solid rgba(207,160,106,.45)}
 .footer-tagline{margin:0;font-family:"Playfair Display","Cormorant Garamond",Georgia,serif;font-size:clamp(24px,4vw,46px);font-weight:700;letter-spacing:2px;color:#3b2c2c;text-transform:uppercase;text-shadow:0 3px 14px rgba(207,160,106,.28);animation:softGlow 3s ease-in-out infinite alternate}
 .footer-brand{margin:14px 0 0;font-family:"Great Vibes","Parisienne",cursive;font-size:clamp(20px,3vw,34px);color:#9b6b3f;letter-spacing:1px}
@@ -292,6 +304,9 @@ blockquote:hover{transform:translateY(-6px);box-shadow:0 22px 46px rgba(31,32,32
   .lookbook-card h3{font-size:25px}
   .feature-split{padding-top:54px;padding-bottom:54px}
   .feature-split img{height:auto}
+  .catalogue-modal{padding:14px}
+  .catalogue-modal__panel{padding:16px;max-height:88vh}
+  .catalogue-modal__panel h2{margin-right:46px}
   .bouquet-footer{padding:42px 14px 30px}
   .footer-tagline{letter-spacing:1px}
 }
